@@ -1,11 +1,14 @@
 import React from "react";
 
 import Movie from "react";
+import { Route } from "react-router-dom";
+import Header from "./Header";
+import MovieDetail from "./MovieDetail";
+import MovieList from "./MovieList";
 
 const App = () => {
   return (
     <div>
-      <Header></Header>
       <Route path="/Register" exact={true} component={Movie}></Route>
       <Route
         path="/MovieDetail/:id"
